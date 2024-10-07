@@ -3,7 +3,7 @@ Minesh Patel 2001 Kings College London Final Year Project
 
 I could not find the final code or write-up so this is one of the final drafts.
 
-Please don't judge mu UX skills on this :)
+Please don't judge my UX skills on this :)
 
 <img width="716" alt="image" src="https://github.com/user-attachments/assets/6a3b5a07-cd37-4336-88c8-c81b94e37c6a">
 
