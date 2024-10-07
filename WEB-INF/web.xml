@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN"
+    "">
+
+<web-app>
+
+	<servlet>
+		<servlet-name>GenMailServlet</servlet-name>
+		<servlet-class>opo.servlets.GenMailServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddingNewUser</servlet-name>
+		<servlet-class>opo.servlets.CreateUser</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>opo.servlets.LoginServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Contacts</servlet-name>
+		<servlet-class>opo.servlets.ContactsServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddContact</servlet-name>
+		<servlet-class>opo.servlets.CreateContact</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Diary</servlet-name>
+		<servlet-class>opo.servlets.DiaryServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Schedule</servlet-name>
+		<servlet-class>opo.servlets.ScheduleServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Notes</servlet-name>
+		<servlet-class>opo.servlets.NotesServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Calculator</servlet-name>
+		<servlet-class>opo.servlets.CalculatorServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Options</servlet-name>
+		<servlet-class>opo.servlets.OptionsServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>EditContact</servlet-name>
+		<servlet-class>opo.servlets.EditContact</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Logout</servlet-name>
+		<servlet-class>opo.servlets.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>CalendarServlet</servlet-name>
+		<servlet-class>opo.servlets.CalendarServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>UpdateContact</servlet-name>
+		<servlet-class>opo.servlets.UpdateContact</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ViewContact</servlet-name>
+		<servlet-class>opo.servlets.ViewContact</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>AddSchedule</servlet-name>
+		<servlet-class>opo.servlets.CreateSchedule</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>EditSchedule</servlet-name>
+		<servlet-class>opo.servlets.EditSchedule</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DeleteSchedule</servlet-name>
+		<servlet-class>opo.servlets.DeleteSchedule</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>ProcessNotes</servlet-name>
+		<servlet-class>opo.servlets.ProcessNotes</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>EditUserInfo</servlet-name>
+		<servlet-class>opo.servlets.EditUserInfo</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>EditUserPassword</servlet-name>
+		<servlet-class>opo.servlets.EditUserPassword</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>EmailServlet</servlet-name>
+		<servlet-class>opo.servlets.EmailServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>EditSecondUser</servlet-name>
+		<servlet-class>opo.servlets.EditSecondUser</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EditSecondUser</servlet-name>
+		<url-pattern>/Organiser_main/Options/EditSecondUser</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>EmailServlet</servlet-name>
+		<url-pattern>/EmailServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>EditUserPassword</servlet-name>
+		<url-pattern>/Organiser_main/Options/EditUserPassword</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>EditUserInfo</servlet-name>
+		<url-pattern>/Organiser_main/Options/EditUserInfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ProcessNotes</servlet-name>
+		<url-pattern>/Organiser_main/Notes/ProcessNotes</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DeleteSchedule</servlet-name>
+		<url-pattern>/Organiser_main/Diary/DeleteSchedule</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>EditSchedule</servlet-name>
+		<url-pattern>/Organiser_main/Diary/EditSchedule</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddSchedule</servlet-name>
+		<url-pattern>/Organiser_main/Diary/AddSchedule</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>ViewContact</servlet-name>
+		<url-pattern>/Organiser_main/Contacts/ViewContact</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>UpdateContact</servlet-name>
+		<url-pattern>/Organiser_main/Contacts/UpdateContact</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>CalendarServlet</servlet-name>
+		<url-pattern>/Organiser_main/Calendar/Calendar</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Logout</servlet-name>
+		<url-pattern>/Logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>EditContact</servlet-name>
+		<url-pattern>/Organiser_main/Contacts/EditContact</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Options</servlet-name>
+		<url-pattern>/Organiser_main/Options/Options</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Calculator</servlet-name>
+		<url-pattern>/Organiser_main/Calculator/Calculator</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Notes</servlet-name>
+		<url-pattern>/Organiser_main/Notes/Notes</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Schedule</servlet-name>
+		<url-pattern>/Organiser_main/Schedule/Schedule</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Diary</servlet-name>
+		<url-pattern>/Organiser_main/Diary/Diary</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddContact</servlet-name>
+		<url-pattern>/Organiser_main/Contacts/AddContact</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Contacts</servlet-name>
+		<url-pattern>/Organiser_main/Contacts/Contacts</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>AddingNewUser</servlet-name>
+		<url-pattern>/CreateUserServlet</url-pattern>
+	</servlet-mapping>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>no-access</web-resource-name>
+			<url-pattern>/protected/NewUserCreated.html</url-pattern>
+			<url-pattern>/protected/logged_In.html</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>nobody</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+  <login-config>
+    <auth-method>BASIC</auth-method>
+    <realm-name>Online Personal Organiser</realm-name>
+  </login-config>
+
+
+
+
+
+</web-app>

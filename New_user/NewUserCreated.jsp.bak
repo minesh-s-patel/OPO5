@@ -1,0 +1,38 @@
+<%@ page language="java" contentType="text/html" %>
+<% response.setDateHeader("Expires", 0);
+   response.setHeader("Pragma","no-cache");
+   response.setHeader("Cache-Control","no-store");
+   if (request.getProtocol().equals("HTTP/1.1")) {
+   response.setHeader("Cache-Control","no-cache");
+   }
+%>
+<html>
+<head>
+<title>Welcome</title>
+</head>
+<body bgcolor="BFC8DF">
+
+<jsp:useBean id="userInfo" scope="session" class="beans.UserBean" />
+<table width="100%" border="0" height="307">
+  <tr> 
+    <td width="30%" height="255"> 
+      <p><img src="/OPO5/New_user/newUser_images/organiser_image.gif"></p>
+      </td>
+    <td width="70%" height="255"> 
+      <form name="welcomeNewUser" method="post" action="/OPO5/Organiser_main/Organiser.jsp">
+  <p align="center"><font size="+3"> Congratulations 
+  <jsp:getProperty name="userInfo" property="firstName" />
+  !!!
+  </font></p>
+  <p>&nbsp;</p>
+  <p align="center">You have just been added to the Login Database!</p>
+  <p align="center">Click here to enter: 
+    <input type="submit" value="Enter OPO">
+  </p>
+</form>
+      </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
